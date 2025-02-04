@@ -16,9 +16,17 @@ public class Db_Reg {
 
         DbCon db = new DbCon();
         try {
-            String qry = "insert into emp(name,password,salary) values('" + name + "','" + password + "','" + address
-                    + "' " + sal + ")";
-            System.out.println(qry);
+            // String qry = "insert into emp(name,password,salary) values('" + name + "','"
+            // + password + "','" + address
+            // + "' " + sal + ")";
+            // db.pst = db.con.prepareStatement(qry);
+            // System.out.println(qry);
+
+            String qry = "insert into table1 values(? , ? , ? , ?)";
+            db.pst.setString(1, name);
+            db.pst.setString(2, password);
+            db.pst.setString(3, address);
+            db.pst.setDouble(4, sal);
             db.st.executeUpdate(qry);
             System.out.println("Record Inserted");
         } catch (Exception e) {

@@ -6,10 +6,14 @@ public class DbCon {
 
     public Connection con;
     public Statement st;
+    public PreparedStatement pst;
+    public ResultSet rs;
+    public ResultSetMetaData md;
 
     DbCon() {
         try {
-            // how to include the zarvis.jar file in the classpath while running the program from the terminal or cmd
+            // how to include the zarvis.jar file in the classpath while running the program
+            // from the terminal or cmd
             // step 1: go to the directory where the jar file is present
             // step 2: run the following command
             // java -cp .;jarfilename.jar filename
