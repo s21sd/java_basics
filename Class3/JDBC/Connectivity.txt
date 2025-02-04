@@ -1,0 +1,9 @@
+// For connecting to the database we need to follow the following steps:
+// step 1 -> Register the driver class (specific to the database) Class.forName("com.mysql.jdbc.Driver"); Class is the built-in class in java.lang package and forName is the method to register the class. com.mysql.jdbc is the package name and Driver is the class name. 
+// stablished the connection between the java application and the database. Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Dbname", "root", "root"); DriverManager is the class in java.sql package and getConnection is the method to establish the connection between the java application and the database. jdbc:mysql is the sub-protocol for mysql database. localhost is the address of the server where mysql is running. 3306 is the port number. Dbname is the database name. root is the username and password is also root.
+
+// Class.forName("jdbc.oracle.driver.OracleDriver");
+// Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "oracle");
+
+
+// step 3-> Create the statement object Statement stmt = con.createStatement(); con is the object of Connection interface and createStatement is the method of Connection interface. It is used to create the statement object that is used to send the sql query to the database.
