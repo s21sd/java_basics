@@ -2,7 +2,7 @@ package Class3.JDBC;
 
 import java.sql.*;
 
-public class DbCon {
+public class Dbcon {
 
     public Connection con;
     public Statement st;
@@ -10,7 +10,7 @@ public class DbCon {
     public ResultSet rs;
     public ResultSetMetaData md;
 
-    DbCon() {
+    Dbcon() {
         try {
             // how to include the zarvis.jar file in the classpath while running the program
             // from the terminal or cmd

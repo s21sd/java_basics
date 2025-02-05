@@ -14,7 +14,7 @@ public class Db_Reg {
         System.out.println("Enter Salary:");
         double sal = sc.nextDouble();
 
-        DbCon db = new DbCon();
+        Dbcon db = new Dbcon();
         try {
             // String qry = "insert into emp(name,password,salary) values('" + name + "','"
             // + password + "','" + address

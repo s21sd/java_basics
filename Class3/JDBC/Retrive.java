@@ -2,7 +2,7 @@ package Class3.JDBC;
 
 public class Retrive {
     public static void main(String[] ar) {
-        DbCon db = new DbCon();
+        Dbcon db = new Dbcon();
         try {
             db.st.executeQuery("select * from table1");
             db.md = db.rs.getMetaData();
