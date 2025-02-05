@@ -14,6 +14,9 @@ public class ArrayListEg {
         st.add("F");
         // st.clear(); // Clear all elements
         // st.remove(2); // Remove element at index 2
+        // for (String s : st) {
+        //     System.out.println(s);
+        // }
 
         System.out.println(st);
     }

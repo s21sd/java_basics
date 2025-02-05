@@ -1,5 +1,3 @@
-
-// Program name = public class name
 // one program can have multiple classes but only one public class
 // public class name should be same as file name
 // class name should start with capital letter
@@ -10,4 +8,5 @@ public class PackageClass {
         S s1 = new S(); // Uses the local S
         Sunny.S s2 = new Sunny.S(); // Uses Sunny.S
     }
+    
 }
