@@ -12,12 +12,16 @@ public class ArrayListEg {
         st.add("D");
         st.add("E");
         st.add("F");
-        // st.clear(); // Clear all elements
+        st.add(1, "Sunny"); // Convert double to string
+        System.out.println(st.get(0));
+        // System.out.println(st.set(1,"Sunny2")); // Replace element at index 1
+        System.out.println(st.set(1, "Asmitha")); // Replace element at index 1
+        st.clear(); // Clear all elements
         // st.remove(2); // Remove element at index 2
         // for (String s : st) {
-        //     System.out.println(s);
+        // System.out.println(s);
         // }
-
+        System.out.println(st.contains("Asmitha2"));
         System.out.println(st);
     }
 

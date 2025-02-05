@@ -68,7 +68,7 @@ public class ExceptionsClass {
         } else {
             try {
                 throw new NoMatchException("No match Exception");
-            } catch (NoMatchException e) {
+            } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
         }

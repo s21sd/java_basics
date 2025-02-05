@@ -13,7 +13,7 @@ public class Vector_Eg1 {
         v.add("B");
         v.add("C");
         v.add("D");
-        v.add("E");
+        v.add("E");  
         System.out.println("Capacity after adding 5 elements: " + v.capacity());
         System.out.println("Size after adding 5 elements: " + v.size());
 
